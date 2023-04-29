@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="bd-color-ffe9cb">
+        <nav>
+            <div class="logo">
+            
+                <a href="#">DEEP SHETH</a>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="#section1">Home</a></li>
+                    <li><p></p></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><p></p></li>
+                    <li><a href="#section3">Skills</a></li>
+                    <li><p></p></li>
+                    <li><a href="#section4">Portfolio</a></li>
+                    <li><p></p></li>
+                    <li><a href="#section5">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+
+        <section class="row-1" id="section1">
+            <div class="col-1">
+                <h4>Hello, I am</h4>
+                <h2>Deep Pragnesh Sheth</h2>
+                <h3>Front end and Back end </h3>
+                <button type="button">Download My CV</button>
+            </div>
+            <div class="col-2">
+                <img src="deep sheth.jpg" alt="img" />
+            </div>
+        </section>
+        <section class="row-2" id="section2">
+            <h2>About me</h2>
+            <div class="components">
+                <div class="col-1">
+                    <img src="deep sheth.jpg" alt="img" />
+                </div>
+                <div class="col-2">
+                    <p> I am B-Tech student from Parul University. 
+                        I am always passionate about learning new things about computers and had a keen interest to solve problems and make people live better.
+                    </p>
+
+                    </div>
+                </div>
+            </section>
+            <section class="row-3" id="section3">
+                <h2>Skills</h2>
+                <div class="components">
+                    <div class="subcomponents">
+                    <div class="skills"><img src="c.programing.png" alt=""></div>
+                    <div class="skills"><img src="C++.png" alt=""></div>
+                    <div class="skills"><img src="html.png" alt=""></div>
+
+                    </div>
+                </section>
+                <section class="row-4" id="section4">
+                    <h2>Portfolio</h2>
+                    <div class="subrow">
+                        <div class="col">
+                            <img src="hmtl.JPG" alt="">
+                            <p>Web Development</p>
+                            <h4>New Portfolio design</h4>
+                            <a href="#">View Details...</a>
+                        </div>
+                        <div class="col">
+                            <img src="css.JPG" alt="">
+                            <p>Web Development</p>
+                            <h4>New Portfolio design</h4>
+                            <a href="#">View Details...</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="row-5" id="section5">
+                    <h2>Contact</h2>
+                    <form class="input" action="">
+                        <input type="text" class="input-items" placeholder="Full name">
+                        <input type="email" class="input-items" placeholder="Email address">
+                        <input type="text" class="input-items" placeholder="Subject of The Message">
+                        <textarea name="" class="input-items" id="message" cols="100" rows="5" placeholder="Type your message here..."></textarea>
+                        <button type="submit" id="button">Send Message <i class="fa-solid fa-face-smile"  style="color: yellow;"></i></button>
+                    </form>    
+                </section>
+            </main>
+            <footer>
+                <div class="foot">
+                    <p>&copy; 2023 DEEP SHETH</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
